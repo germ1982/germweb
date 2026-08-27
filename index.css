@@ -1,0 +1,238 @@
+/* index.css: Estilos adaptados de la interfaz high-tech */
+body {
+    background-color: #121212;
+    color: #00bfff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+
+.video-background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    overflow: hidden;
+    transform: scale(1.05);
+    pointer-events: none;
+}
+
+.video-background-container iframe {
+    width: 100vw;
+    height: 56.25vw;
+    min-height: 100vh;
+    min-width: 177.77vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateZ(0);
+    will-change: transform;
+}
+
+.overlay-div-dashboard {
+    position: relative;
+    z-index: 2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.dashboard-header-bar {
+    background: rgba(0, 20, 40, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 2px solid #00bfff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 191, 255, 0.4);
+    padding: 10px 25px;
+    margin: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.header-content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-logo {
+    width: 50px;
+    height: auto;
+    border-radius: 50%; /* Redondea completamente los bordes */
+}
+
+.header-titles-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-title {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #a2c8ff;
+    margin: 0;
+    text-shadow: 0 0 8px rgba(0, 191, 255, 0.6);
+}
+
+.header-breadcrumb {
+    font-size: 0.6rem;
+    color: #30c5a7;
+    margin-top: 3px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #00bfff;
+    text-decoration: none;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00ffcc;
+    text-shadow: 0 0 8px rgba(0, 255, 204, 0.6);
+}
+
+.dashboard-body-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 25px;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.data-card {
+    background: rgba(0, 20, 40, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid #00bfff;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 191, 255, 0.6);
+    padding: 20px;
+    width: 380px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.data-card:hover {
+    box-shadow: 0 0 35px rgba(0, 225, 255, 0.9);
+    border-color: #00ffcc;
+}
+
+.box-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.75rem;
+    color: #a2c8ff;
+    text-align: center;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(0, 191, 255, 0.3);
+    margin-top: 0;
+}
+
+.card-content p {
+    color: #e0f0ff;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+
+.intro-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000; /* Fondo totalmente negro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+transition: opacity 2s ease; /* <--- Efecto fade out */
+}
+
+.intro-container.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* index.css: Video centrado, más chico y con estética high-tech */
+.intro-video {
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px; /* Modificá este valor si lo querés más grande o más chico */
+    height: auto;
+
+    z-index: 9999;
+    background-color: #121212;
+    object-fit: cover;
+}
+
+.intro-video.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* index.css: Adaptación para dispositivos móviles (Responsive Design) */
+@media (max-width: 768px) {
+    /* Apila los elementos de la cabecera en pantallas chicas */
+    .dashboard-header-bar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .header-title{
+        font-size: 10px;
+    }
+
+    .header-content-wrapper {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* Hace que las tarjetas ocupen todo el ancho de la pantalla del celu */
+    .dashboard-body-container {
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .data-card {
+        width: 100%;
+        min-height: auto;
+    }
+}
