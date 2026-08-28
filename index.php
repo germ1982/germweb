@@ -11,11 +11,11 @@
 
 <body>
 
-<div id="intro-container" class="intro-container">
-    <video id="intro-video" class="intro-video" autoplay muted playsinline>
-        <source src="logo.mp4" type="video/mp4">
-    </video>
-</div>
+    <div id="intro-container" class="intro-container">
+        <video id="intro-video" class="intro-video" autoplay muted playsinline>
+            <source src="logo.mp4" type="video/mp4">
+        </video>
+    </div>
 
     <!-- Fondo de video cibernético -->
     <div class="video-background-container">
@@ -39,7 +39,7 @@
                     $video = "Spl_AtO4bho";
                     //Cyber Ambient for Deep Work | Data Fusion Center
                     break;
-                    case '5':
+                case '5':
                     $video = "Okb1TjsZlm0";
                     //Network Connection Background Video, Plexus Dot Connection Background Loop
                     break;
@@ -63,19 +63,19 @@
                     //Greeny Plexus Background Loop Footage
                     break;
 
-                    case '10':
+                case '10':
                     $video = "mbLbhWCYX3M";
                     //Greeny Plexus Background Loop Footage
                     break;
-                    case '11':
+                case '11':
                     $video = "PqSq7tM-U0E";
                     //UNIDAD 09: SISTEMAS EN LÍNEA | Cyberpunk  Synthwave  Retrowave
                     break;
-                    case '12':
+                case '12':
                     $video = "5jyGhAbudgw";
                     //Ecos de Mundos Distantes
                     break;
-                    case '13':
+                case '13':
                     $video = "M8UdxpCgLys";
                     //Cinematic Journey to an Ocean Planet
                     break;
@@ -86,7 +86,7 @@
 
             $video = "Okb1TjsZlm0";
 
-            
+
             ?>
 
             src="https://www.youtube.com/embed/<?= $video ?>?autoplay=1&mute=1&loop=1&playlist=<?= $video ?>&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&vq=hd2160&start=8&end=1224"
@@ -100,6 +100,7 @@
     <div class="overlay-div-dashboard">
 
         <!-- Header superior -->
+
         <header class="dashboard-header-bar">
             <div class="header-content-wrapper">
                 <img src="logo.png" alt="Logo G.E.R.M." class="header-logo">
@@ -109,6 +110,7 @@
                 </div>
             </div>
             <nav class="nav-links">
+                <a href="#home">Inicio</a>
                 <a href="#conectividad">Conectividad</a>
                 <a href="#soporte">Soporte</a>
                 <a href="#contenido-ia">Contenido IA</a>
@@ -119,6 +121,23 @@
 
         <!-- Contenedor de tarjetas estilo dashboard -->
         <main class="dashboard-body-container">
+
+            <section id="home" class="data-card home">
+
+                <div class="card-content">
+
+                <img src="banner.png" alt="Banner G.E.R.M." class="banner-img">
+
+                                <h3 class="box-title">Soluciones tecnológicas integrales para potenciar tu operación.</h3>
+
+                    <p>En G.E.R.M. Soluciones Informáticas nos especializamos en ofrecer soporte técnico y respuestas a medida para hogares y empresas en Neuquén. Nuestro compromiso es garantizar que cada dispositivo y sistema funcione con la máxima eficiencia, asegurando la continuidad de tus operaciones y la protección integral de tu información.
+
+Contamos con amplia trayectoria en el sector, abarcando desde el mantenimiento de hardware y la implementación de redes seguras hasta el desarrollo de software personalizado. Cada proyecto se aborda con un enfoque riguroso, orientado a resultados y adaptado a los requerimientos específicos de cada cliente.
+
+Nuestro objetivo es claro: que la tecnología trabaje a tu favor, ofreciendo la seguridad y tranquilidad necesarias para que puedas centrarte por completo en hacer crecer tu negocio o disfrutar de tu hogar.</p>
+
+                </div>
+            </section>
 
             <section id="conectividad" class="data-card">
                 <h3 class="box-title">Conectividad & Seguridad</h3>
@@ -164,6 +183,7 @@
         </main>
     </div>
 
+
     <!-- Script en JS (JavaScript) -->
     <script src="index.js"></script>
 </body>
@@ -174,6 +194,6 @@
 // index.php: Estructura principal con la estética institucional de alta tecnología (High-Tech)
 
 
-    include( '/_form.js');
+include('/_form.js');
 
 ?>
