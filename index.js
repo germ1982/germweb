@@ -1,3 +1,5 @@
+
+
 // index.js: Control del menú desplazando solo el contenedor interno
 document.addEventListener('DOMContentLoaded', () => {
     const introContainer = document.getElementById('intro-container');
@@ -22,7 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
             
             if (container && targetElement) {
                 // Calcula la posición exacta relativa al contenedor para evitar scroll global
-                const topPos = targetElement.offsetTop - container.offsetTop;
+                //const topPos = targetElement.offsetTop - container.offsetTop;
+                const topPos = targetElement.offsetTop - container.offsetTop - 20; // -20 le da un respiro arriba
                 container.scrollTo({
                     top: topPos,
                     behavior: 'smooth'

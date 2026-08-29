@@ -115,6 +115,7 @@
                 <a href="#soporte">Soporte</a>
                 <a href="#contenido-ia">Contenido IA</a>
                 <a href="#desarrollo">Desarrollo</a>
+                <a href="#sobre-mi">Sobre Mí</a>
                 <a href="#contacto">Contacto</a>
             </nav>
         </header>
@@ -126,57 +127,196 @@
 
                 <div class="card-content">
 
-                <img src="banner.png" alt="Banner G.E.R.M." class="banner-img">
+                    <img src="banner.png" alt="Banner G.E.R.M." class="banner-img">
 
-                                <h3 class="box-title">Soluciones tecnológicas integrales para potenciar tu operación.</h3>
+                    <h3 class="box-title">Soluciones tecnológicas integrales para potenciar tu operación.</h3>
 
-                    <p>En G.E.R.M. Soluciones Informáticas nos especializamos en ofrecer soporte técnico y respuestas a medida para hogares y empresas en Neuquén. Nuestro compromiso es garantizar que cada dispositivo y sistema funcione con la máxima eficiencia, asegurando la continuidad de tus operaciones y la protección integral de tu información.
-
-Contamos con amplia trayectoria en el sector, abarcando desde el mantenimiento de hardware y la implementación de redes seguras hasta el desarrollo de software personalizado. Cada proyecto se aborda con un enfoque riguroso, orientado a resultados y adaptado a los requerimientos específicos de cada cliente.
-
-Nuestro objetivo es claro: que la tecnología trabaje a tu favor, ofreciendo la seguridad y tranquilidad necesarias para que puedas centrarte por completo en hacer crecer tu negocio o disfrutar de tu hogar.</p>
-
+                    <p>
+                        En <strong>G.E.R.M. Servicios en Informáticas</strong> nos especializamos en brindar servicios integrales en Tecnologías de la Información (TI) para hogares, PyMEs (Pequeñas y Medianas Empresas) y corporaciones en Neuquén. Nuestro enfoque combina soporte técnico avanzado, conectividad segura y desarrollo de software a medida.
+                    </p>
+                    <p>
+                        Garantizamos la continuidad operativa de tus sistemas y la protección integral de tu información mediante un servicio riguroso, eficiente y adaptado a requerimientos reales. Nuestro objetivo es que la tecnología potencie tu productividad y te dé la tranquilidad necesaria para enfocarte en hacer crecer tu negocio o disfrutar de tu hogar.
+                    </p>
                 </div>
             </section>
 
             <section id="conectividad" class="data-card">
                 <h3 class="box-title">Conectividad & Seguridad</h3>
                 <div class="card-content">
-                    <p>📶 Instalación de redes WIFI (Wireless Fidelity) y LAN (Local Area Network).</p>
-                    <p>📷 Instalación y configuración de cámaras de seguridad y sistemas de alarmas.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <img src="net2.jpg" alt="Banner G.E.R.M." class="subportada-img">
+
+                        </div>
+                        <div class="col-md-6">
+                            Redes WiFi (Wireless Fidelity) y LAN (Local Area Network):
+
+                            <p>
+                                Instalación de cableado estructurado para garantizar conexiones físicas estables, seguras y sin pérdidas de velocidad.
+                            </p>
+                            <p>
+                                🔌Configuración de enrutadores y puntos de acceso WiFi (Wireless Fidelity) para lograr una cobertura total sin zonas ciegas en toda la casa u oficina.
+                            </p>
+                            <p>
+                                📶 Optimización y segmentación del tráfico de red para mejorar el rendimiento de todos los equipos conectados. 💻
+                            </p>
+                            Cámaras de seguridad y sistemas de alarmas:
+                            <p>
+                                Instalación estratégica de cámaras de seguridad con visión nocturna, alta definición y almacenamiento local o en la nube.
+                            </p>
+                            <p>
+                                📹 Configuración de sistemas de alarmas con sensores de movimiento, aperturas magnéticas y sirenas de alta potencia.
+                            </p>
+                            <p>
+                                🚨 Puesta a punto del acceso remoto para que puedas monitorear todo en tiempo real desde el celu y recibir alertas al instante. 📱🔒
+                            </p>
+                        </div>
+
+                    </div>
+
                 </div>
             </section>
 
             <section id="soporte" class="data-card">
                 <h3 class="box-title">Soporte Hardware & Software</h3>
                 <div class="card-content">
-                    <p>🛠️ Reparación, actualización e instalación de Hardware y Software para PC (Personal Computer) y Notebooks.</p>
-                    <p>🛡️ Mantenimiento preventivo y limpieza profunda de Virus / Antivirus.</p>
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <img src="net2.jpg" alt="Banner G.E.R.M." class="subportada-img">
+
+                        </div>
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                Laboratorio
+                                <p>
+                                    🛠️ Reparación, diagnóstico avanzado y reemplazo de componentes críticos (como memoria RAM [Random Access Memory], discos de estado sólido SSD [Solid State Drive], fuentes de alimentación y pantallas) para devolverle la velocidad y rendimiento a tu PC (Personal Computer) o notebook.
+                                </p>
+                                <p>
+                                    ⚙️ Instalación de sistemas operativos, controladores y optimización general del entorno de software para evitar cuellos de botella.
+                                </p>
+                                Mantenimiento preventivo y seguridad informática:
+                                <p>
+                                    🧹 Limpieza física profunda de componentes, cambio de pasta térmica en procesadores y revisión de temperaturas.
+                                </p>
+                                <p>
+                                    🛡️ Detección y limpieza profunda de virus, troyanos, spyware y software malicioso, junto con la configuración de antivirus robustos.
+                                </p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <img src="soporte.jpg" alt="Soporte G.E.R.M." class="subportada-img">
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
             </section>
 
             <section id="contenido-ia" class="data-card">
                 <h3 class="box-title">Creación de Contenido con IA (Inteligencia Artificial)</h3>
                 <div class="card-content">
-                    <p>🎬 Videos Dinámicos y edición profesional con IA (Inteligencia Artificial).</p>
-                    <p>🎨 Diseño Gráfico: Flyers (Folletos digitales) y piezas publicitarias.</p>
-                    <p>📸 Laboratorio Digital: Restauración de fotos y mejoras con IA (Inteligencia Artificial).</p>
-                </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <img src="ia.jpg" alt="Banner G.E.R.M." class="subportada-img">
+
+                        </div>
+                        <div class="col-md-6">
+                            <p>
+                                🤖 Creación de Contenido para redes con IA (Inteligencia Artificial):
+                                Videos Dinámicos: Edición profesional potenciada con herramientas de IA para un impacto visual único.
+                            </p>
+                            <p>
+                                🎥 Diseño Gráfico: Creación de Flyers (Folletos digitales) y piezas publicitarias creativas para redes sociales.
+                            </p>
+                            <p>
+                                🎨 Producciones Especiales: Creación de videos emotivos o comerciales a partir de tus fotos y recuerdos.
+                            </p>
+                            <p>
+                                🎞️✨ Laboratorio Digital: Restauración de fotos antiguas, escaneo y mejora de calidad (Upscaling) con IA. ¡Reviví tus mejores recuerdos!
+                            </p>
+                            <p>
+                                📸✨ Contenido Personalizado: Soluciones a medida para potenciar tu marca personal o comercial. 📢
+                            </p>
+
+
+                        </div>
+                    </div>
             </section>
 
             <section id="desarrollo" class="data-card">
                 <h3 class="box-title">Desarrollo De Software</h3>
                 <div class="card-content">
-                    <p>🌐 Creación de páginas web y plataformas de gestión personalizadas.</p>
-                    <p>📈 Desarrollo de sistemas a medida para optimizar tus procesos.</p>
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            Creación de páginas web y plataformas de gestión personalizadas:
+                            <p>
+                                💻 Diseño y desarrollo de sitios web modernos, rápidos y totalmente adaptados a dispositivos móviles utilizando HTML (HyperText Markup Language) y CSS (Cascading Style Sheets).
+                            </p>
+                            <p>
+                                🌐 Construcción de paneles de control y plataformas web interactivas mediante JavaScript, PHP (Hypertext Preprocessor) y bases de datos SQL (Structured Query Language).
+                            </p>
+                            Desarrollo de sistemas a medida y automatización:
+                            <p>
+                                📊 Creación de software específico para optimizar la gestión interna de tu negocio, automatizando tareas repetitivas y centralizando la información clave.
+                            </p>
+                            <p>
+                                📢 Integración de herramientas y contenido inteligente mediante API (Application Programming Interface) para potenciar la marca, la comunicación y el alcance de tu local o empresa.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="soft.jpg" alt="Desarrollo G.E.R.M." class="subportada-img">
+                        </div>
+                    </div>
                 </div>
+            </section>
+
+            <section id="sobre-mi" class="data-card">
+                <h3 class="box-title">Sobre Mi</h3>
+                <div class="card-content">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="GERM.jpg" alt="Desarrollo G.E.R.M." class="subportada-img">
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                Con más de dos décadas de trayectoria en el sector de las Tecnologías de la Información (TI), me desempeño como Analista de Sistemas y desarrollador Full Stack Senior, ofreciendo un enfoque integral que abarca desde la infraestructura física hasta el desarrollo de software a medida para empresas y hogares.
+                            </p>
+                            <p>
+                                Mi experiencia consolida una sólida base en arquitectura de sistemas y desarrollo corporativo, utilizando frameworks (marcos de trabajo) de backend (servidor) como Laravel, Yii y CodeIgniter, junto con tecnologías modernas de frontend (interfaz de usuario) como Angular y TypeScript (superconjunto de JavaScript que añade tipado estático). Este respaldo técnico me permite diseñar y desplegar plataformas web robustas, sistemas de gestión avanzados y herramientas de automatización orientadas a optimizar la productividad operativa.
+                            </p>
+                            <p>
+                                Asimismo, mi perfil se complementa con un dominio profundo en infraestructura tecnológica: diseño e implementación de redes LAN (Local Area Network) y WiFi (Wireless Fidelity) de alta estabilidad, integración de sistemas de videovigilancia y seguridad electrónica, y soporte técnico de nivel avanzado en hardware (equipos físicos) y software (programas) para PC (Personal Computer) y servidores.
+                            </p>
+                            <p>
+                                Bajo la premisa de que la tecnología debe simplificar y potenciar las operaciones, brindo consultoría directa y personalizada. Garantizo estándares de máxima eficiencia, seguridad informática y soporte continuo para acompañar el crecimiento estratégico de cada proyecto u organización.
+                            </p>
+                        </div>
             </section>
 
             <section id="contacto" class="data-card">
                 <h3 class="box-title">Contacto</h3>
-                <div class="card-content">
-                    <p>📍 Neuquén y alrededores.</p>
-                    <p>📞 Contáctanos hoy mismo: <strong>2994658199</strong></p>
+                <div class="card-content" style="text-align: center; padding: 20px;">
+                    <p style="font-size: 0.95rem; margin-bottom: 20px; color: #e0f0ff;">
+                        ¿Necesitás asesoramiento, soporte técnico o desarrollar un proyecto a medida? Ponete en contacto directo:
+                    </p>
+                    <div style="font-size: 1.05rem; display: flex; flex-direction: column; gap: 15px; align-items: center; justify-content: center;">
+                        <p style="margin: 0;">
+                            💬 <strong>WhatsApp:</strong> <a href="https://wa.me/5492994658199" target="_blank" style="color: #00ffcc; text-decoration: none;">2994658199</a>
+                        </p>
+                        <p style="margin: 0;">
+                            📧 <strong>Correo Electrónico:</strong> <a href="mailto:gaston.mena.1982@gmail.com" style="color: #00ffcc; text-decoration: none;">gaston.mena.1982@gmail.com</a>
+                        </p>
+                        <p style="margin: 0;">
+                            📍 <strong>Ubicación:</strong> Neuquén y alrededores (Atención presencial y remota)
+                        </p>
+                    </div>
                 </div>
             </section>
 
