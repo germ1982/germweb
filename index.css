@@ -337,4 +337,13 @@ body {
     width: 100%;
     min-height: auto;
   }
+
+  .data-card .row {
+    flex-direction: column;
+  }
+
+  .data-card .row.row-reverse {
+    flex-direction: column-reverse; /* Invierte el orden para que la imagen suba */
+  }
+  
 }

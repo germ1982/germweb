@@ -89,7 +89,8 @@
 
             ?>
 
-            src="https://www.youtube.com/embed/<?= $video ?>?autoplay=1&mute=1&loop=1&playlist=<?= $video ?>&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&vq=hd2160&start=8&end=1224"
+            
+            src="https://www.youtube.com/embed/<?= $video ?>?autoplay=1&mute=1&loop=1&playlist=<?= $video ?>&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&vq=hd2160&start=8"
             frameborder="0"
             allow="autoplay; encrypted-media"
             referrerpolicy="strict-origin-when-cross-origin"
@@ -181,35 +182,27 @@
             <section id="soporte" class="data-card">
                 <h3 class="box-title">Soporte Hardware & Software</h3>
                 <div class="card-content">
-                    <div class="row">
+                    <div class="row row-reverse">
+
                         <div class="col-md-6">
-
-                            <img src="net2.jpg" alt="Banner G.E.R.M." class="subportada-img">
-
+                            Laboratorio
+                            <p>
+                                🛠️ Reparación, diagnóstico avanzado y reemplazo de componentes críticos (como memoria RAM [Random Access Memory], discos de estado sólido SSD [Solid State Drive], fuentes de alimentación y pantallas) para devolverle la velocidad y rendimiento a tu PC (Personal Computer) o notebook.
+                            </p>
+                            <p>
+                                ⚙️ Instalación de sistemas operativos, controladores y optimización general del entorno de software para evitar cuellos de botella.
+                            </p>
+                            Mantenimiento preventivo y seguridad informática:
+                            <p>
+                                🧹 Limpieza física profunda de componentes, cambio de pasta térmica en procesadores y revisión de temperaturas.
+                            </p>
+                            <p>
+                                🛡️ Detección y limpieza profunda de virus, troyanos, spyware y software malicioso, junto con la configuración de antivirus robustos.
+                            </p>
                         </div>
-                        <div class="row">
 
-                            <div class="col-md-6">
-                                Laboratorio
-                                <p>
-                                    🛠️ Reparación, diagnóstico avanzado y reemplazo de componentes críticos (como memoria RAM [Random Access Memory], discos de estado sólido SSD [Solid State Drive], fuentes de alimentación y pantallas) para devolverle la velocidad y rendimiento a tu PC (Personal Computer) o notebook.
-                                </p>
-                                <p>
-                                    ⚙️ Instalación de sistemas operativos, controladores y optimización general del entorno de software para evitar cuellos de botella.
-                                </p>
-                                Mantenimiento preventivo y seguridad informática:
-                                <p>
-                                    🧹 Limpieza física profunda de componentes, cambio de pasta térmica en procesadores y revisión de temperaturas.
-                                </p>
-                                <p>
-                                    🛡️ Detección y limpieza profunda de virus, troyanos, spyware y software malicioso, junto con la configuración de antivirus robustos.
-                                </p>
-                            </div>
-
-                            <div class="col-md-6">
-                                <img src="soporte.jpg" alt="Soporte G.E.R.M." class="subportada-img">
-                            </div>
-
+                        <div class="col-md-6">
+                            <img src="soporte.jpg" alt="Soporte G.E.R.M." class="subportada-img">
                         </div>
 
                     </div>
@@ -252,7 +245,7 @@
             <section id="desarrollo" class="data-card">
                 <h3 class="box-title">Desarrollo De Software</h3>
                 <div class="card-content">
-                    <div class="row">
+                    <div class="row row-reverse">
 
                         <div class="col-md-6">
                             Creación de páginas web y plataformas de gestión personalizadas:
@@ -334,6 +327,6 @@
 // index.php: Estructura principal con la estética institucional de alta tecnología (High-Tech)
 
 
-include('/_form.js');
-
 ?>
+
+<script src="index.js">
