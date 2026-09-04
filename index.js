@@ -34,3 +34,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+// index.js: Aplica el efecto de electricidad cada 2 segundos a las imágenes superiores
+setInterval(() => {
+    // Selecciona todas las imágenes dentro de las tarjetas con el gráfico arriba
+    const imagenes = document.querySelectorAll('.data-card.card-top-img .subportada-img');
+    
+    imagenes.forEach(img => {
+        // Añade la clase de animación CSS
+        img.classList.add('animar-electricidad');
+        
+        // Quita la clase tras 400ms para permitir que se vuelva a disparar en el siguiente ciclo
+        setTimeout(() => {
+            img.classList.remove('animar-electricidad');
+        }, 200);
+    });
+}, 5000); // Intervalo de repetición: cada 2 segundos

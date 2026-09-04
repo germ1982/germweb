@@ -295,6 +295,18 @@ body {
   display: block;
   margin: 0 auto;
 }
+
+/* Tarjetas con imagen arriba y texto abajo */
+.data-card.card-top-img .card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.data-card.card-top-img .subportada-img {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
 /* index.css: Adaptación para dispositivos móviles (Responsive Design) */
 @media (max-width: 768px) {
   /* Apila los elementos de la cabecera en pantallas chicas */
@@ -308,7 +320,7 @@ body {
 
   .banner-img {
     width: 100%;
-    height: 25%;
+    height: 40%;
   }
 
   .header-title {
@@ -346,4 +358,19 @@ body {
     flex-direction: column-reverse; /* Invierte el orden para que la imagen suba */
   }
   
+}
+
+
+/* index.css: Efecto de electricidad/relámpago */
+@keyframes electricidad {
+  0% { filter: brightness(1) drop-shadow(0 0 0px #00ffff); }
+  20% { filter: brightness(1.8) drop-shadow(0 0 12px #00ffff) contrast(150%); }
+  40% { filter: brightness(0.8) drop-shadow(0 0 4px #2cdd44); }
+  60% { filter: brightness(2) drop-shadow(0 0 15px #00ffff); }
+  80% { filter: brightness(1.2) drop-shadow(0 0 6px #00ffcc); }
+  100% { filter: brightness(1) drop-shadow(0 0 0px #00ffff); }
+}
+
+.animar-electricidad {
+  animation: electricidad 0.4s ease-in-out;
 }
