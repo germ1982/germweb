@@ -366,6 +366,17 @@ body {
     padding: 15px;
     padding-bottom: 100px; /* Margen inferior para ver completo el contacto */
   }
+
+  @media (max-width: 768px) {
+  body, .overlay-div-dashboard {
+    height: 100dvh; /* Altura dinámica de la ventana gráfica (Dynamic Viewport Height) */
+  }
+
+  .dashboard-body-container {
+    padding: 15px;
+    padding-bottom: 100px; /* Margen inferior para ver completo el contacto */
+  }
+}
   
 }
 
