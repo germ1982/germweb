@@ -7,6 +7,7 @@
     <title>G.E.R.M. Servicios en Informática</title>
     <!-- Hoja de estilos en CSS (Cascading Style Sheets) -->
     <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
@@ -117,6 +118,7 @@
                 <a href="#contenido-ia">Contenido IA</a>
                 <a href="#desarrollo">Desarrollo</a>
                 <a href="#sobre-mi">Sobre Mí</a>
+                <a href="#portafolio">Portafolio</a>
                 <a href="#contacto">Contacto</a>
             </nav>
         </header>
@@ -291,6 +293,36 @@
                                 Bajo la premisa de que la tecnología debe simplificar y potenciar las operaciones, brindo consultoría directa y personalizada. Garantizo estándares de máxima eficiencia, seguridad informática y soporte continuo para acompañar el crecimiento estratégico de cada proyecto u organización.
                             </p>
                         </div>
+            </section>
+
+            <section id="portafolio" class="data-card">
+                <h3 class="box-title">Portafolio Web & Plataformas</h3>
+                <div class="card-content">
+                    <div class="row">
+                        <!-- Columna de imagen del portafolio -->
+                        <div class="col-md-6">
+                            <img src="portafolio.jpg" alt="Portafolio G.E.R.M." class="subportada-img">
+                        </div>
+                        <!-- Columna de descripción y enlaces oficiales -->
+                        <div class="col-md-6">
+                            <p>
+                                🚀 <strong>Proyectos y Plataformas en Línea:</strong> Soluciones web desarrolladas integralmente para comunidades, ciclismo y atletismo.
+                            </p>
+                            <p>
+                                🌐 <strong>Comunidad Del Valle:</strong> Espacio de interacción social para personas que buscan vinculos, contactos, oportunidades y espacios de crecimiento. <br>
+                                👉 <a href="https://comunidad.rf.gd/" target="_blank" style="color: #00ffcc; text-decoration: none;">comunidad.rf.gd</a>
+                            </p>
+                            <p>
+                                🚴 <strong>Aventura Sobre Ruedas:</strong> Plataforma para la gestion y registro de actividades de grupos de ciclismo. <br>
+                                👉 <a href="https://aventurabike.rf.gd/" target="_blank" style="color: #00ffcc; text-decoration: none;">aventurabike.rf.gd</a>
+                            </p>
+                            <p>
+                                🏃 <strong>Altura Running (En construcción):</strong> Sistema de gestion para grupos y escuelas de running. <br>
+                                👉 <a href="https://alturarunning.rf.gd/" target="_blank" style="color: #00ffcc; text-decoration: none;">alturarunning.rf.gd</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section id="contacto" class="data-card">

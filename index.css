@@ -345,5 +345,14 @@ body {
   .data-card .row.row-reverse {
     flex-direction: column-reverse; /* Invierte el orden para que la imagen suba */
   }
+
+  body, .overlay-div-dashboard {
+    height: 100dvh; /* Altura dinámica de la ventana gráfica (Dynamic Viewport Height) */
+  }
+
+  .dashboard-body-container {
+    padding: 15px;
+    padding-bottom: 100px; /* Margen inferior para ver completo el contacto */
+  }
   
 }
