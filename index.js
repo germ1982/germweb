@@ -34,3 +34,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+// index.js: Aplica el efecto de electricidad a todas las imágenes de portada cada 2 segundos
+setInterval(() => {
+    const imagenes = document.querySelectorAll('.subportada-img');
+    
+    imagenes.forEach(img => {
+        img.classList.add('animar-electricidad');
+        
+        setTimeout(() => {
+            img.classList.remove('animar-electricidad');
+        }, 200);
+    });
+}, 5000); // Intervalo de repetición: cada 2 segundos
