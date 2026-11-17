@@ -119,8 +119,10 @@
                 <a href="#desarrollo">Desarrollo</a>
                 <a href="#sobre-mi">Sobre Mí</a>
                 <a href="#portafolio">Portafolio</a>
+                <a href="#presupuesto">Presupuesto</a>
                 <a href="#contacto">Contacto</a>
             </nav>
+            <a href="https://germstore.rf.gd/" target="_blank" rel="noopener" class="nav-cta">🛒 Tienda</a>
         </header>
 
         <!-- Contenedor de tarjetas estilo dashboard -->
@@ -293,35 +295,113 @@
                                 Bajo la premisa de que la tecnología debe simplificar y potenciar las operaciones, brindo consultoría directa y personalizada. Garantizo estándares de máxima eficiencia, seguridad informática y soporte continuo para acompañar el crecimiento estratégico de cada proyecto u organización.
                             </p>
                         </div>
+                    </div>
+                </div>
             </section>
 
             <section id="portafolio" class="data-card">
                 <h3 class="box-title">Portafolio Web & Plataformas</h3>
                 <div class="card-content">
-                    <div class="row">
-                        <!-- Columna de imagen del portafolio -->
-                        <div class="col-md-6">
-                            <img src="portafolio.jpg" alt="Portafolio G.E.R.M." class="subportada-img">
-                        </div>
-                        <!-- Columna de descripción y enlaces oficiales -->
-                        <div class="col-md-6">
-                            <p>
-                                🚀 <strong>Proyectos y Plataformas en Línea:</strong> Soluciones web desarrolladas integralmente para comunidades, ciclismo y atletismo.
-                            </p>
-                            <p>
-                                🌐 <strong>Comunidad Del Valle:</strong> Espacio de interacción social para personas que buscan vinculos, contactos, oportunidades y espacios de crecimiento. <br>
-                                👉 <a href="https://comunidad.rf.gd/" target="_blank" style="color: #00ffcc; text-decoration: none;">comunidad.rf.gd</a>
-                            </p>
-                            <p>
-                                🚴 <strong>Aventura Sobre Ruedas:</strong> Plataforma para la gestion y registro de actividades de grupos de ciclismo. <br>
-                                👉 <a href="https://aventurabike.rf.gd/" target="_blank" style="color: #00ffcc; text-decoration: none;">aventurabike.rf.gd</a>
-                            </p>
-                            <p>
-                                🏃 <strong>Altura Running (En construcción):</strong> Sistema de gestion para grupos y escuelas de running. <br>
-                                👉 <a href="https://alturarunning.rf.gd/" target="_blank" style="color: #00ffcc; text-decoration: none;">alturarunning.rf.gd</a>
-                            </p>
-                        </div>
+
+                    <p class="portfolio-intro">
+                        🚀 Proyectos desarrollados de punta a punta y funcionando en línea. Tocá cualquier vista previa para visitar el sitio.
+                    </p>
+
+                    <!-- Grupo: plataformas de gestión -->
+                    <h4 class="portfolio-group-title">Plataformas de gestión</h4>
+                    <div class="portfolio-grid">
+
+                        <article class="portfolio-card">
+                            <a href="https://comunidad.rf.gd/" target="_blank" rel="noopener" class="portfolio-preview">
+                                <span class="preview-bar"><i></i><i></i><i></i><span class="preview-url">comunidad.rf.gd</span></span>
+                                <img src="portafolio/comunidad.jpg" alt="Vista previa de Comunidad Del Valle" loading="lazy">
+                            </a>
+                            <div class="portfolio-info">
+                                <h5>🌐 Comunidad Del Valle <span class="badge badge-online">En línea</span></h5>
+                                <p>Red social regional con chats, miembros, emprendimientos, trabajos, ventas e inmobiliarios.</p>
+                                <a href="https://comunidad.rf.gd/" target="_blank" rel="noopener" class="portfolio-btn">Visitar sitio ↗</a>
+                            </div>
+                        </article>
+
+                        <article class="portfolio-card">
+                            <a href="https://aventurabike.rf.gd/" target="_blank" rel="noopener" class="portfolio-preview">
+                                <span class="preview-bar"><i></i><i></i><i></i><span class="preview-url">aventurabike.rf.gd</span></span>
+                                <img src="portafolio/aventurabike.jpg" alt="Vista previa de Aventura Sobre Ruedas" loading="lazy">
+                            </a>
+                            <div class="portfolio-info">
+                                <h5>🚴 Aventura Sobre Ruedas <span class="badge badge-online">En línea</span></h5>
+                                <p>Gestión y registro de actividades para grupos de ciclismo: ciclistas, bicicletas, bitácora y galería.</p>
+                                <a href="https://aventurabike.rf.gd/" target="_blank" rel="noopener" class="portfolio-btn">Visitar sitio ↗</a>
+                            </div>
+                        </article>
+
+                        <article class="portfolio-card">
+                            <a href="https://alturarunning.rf.gd/" target="_blank" rel="noopener" class="portfolio-preview">
+                                <span class="preview-bar"><i></i><i></i><i></i><span class="preview-url">alturarunning.rf.gd</span></span>
+                                <img src="portafolio/alturarunning.jpg" alt="Vista previa de Altura Running" loading="lazy">
+                            </a>
+                            <div class="portfolio-info">
+                                <h5>🏃 Altura Running <span class="badge badge-online">En línea</span></h5>
+                                <p>Sistema de gestión para grupos y escuelas de running: eventos, alumnos y novedades.</p>
+                                <a href="https://alturarunning.rf.gd/" target="_blank" rel="noopener" class="portfolio-btn">Visitar sitio ↗</a>
+                            </div>
+                        </article>
+
                     </div>
+
+                    <!-- Grupo: catálogos online -->
+                    <h4 class="portfolio-group-title">Catálogos online</h4>
+                    <div class="portfolio-grid">
+
+                        <article class="portfolio-card portfolio-card-featured">
+                            <a href="https://germstore.rf.gd/" target="_blank" rel="noopener" class="portfolio-preview">
+                                <span class="preview-bar"><i></i><i></i><i></i><span class="preview-url">germstore.rf.gd</span></span>
+                                <img src="portafolio/germstore.jpg" alt="Vista previa de G.E.R.M. Ventas" loading="lazy">
+                            </a>
+                            <div class="portfolio-info">
+                                <h5>⚡ G.E.R.M. Ventas <span class="badge badge-official">Catálogo oficial</span></h5>
+                                <p>Nuestro catálogo de productos informáticos, con buscador, categorías y consulta directa por WhatsApp.</p>
+                                <a href="https://germstore.rf.gd/" target="_blank" rel="noopener" class="portfolio-btn">Ver catálogo ↗</a>
+                            </div>
+                        </article>
+
+                        <article class="portfolio-card">
+                            <a href="https://arteverde.rf.gd/" target="_blank" rel="noopener" class="portfolio-preview">
+                                <span class="preview-bar"><i></i><i></i><i></i><span class="preview-url">arteverde.rf.gd</span></span>
+                                <img src="portafolio/arteverde.jpg" alt="Vista previa de Arte Verde" loading="lazy">
+                            </a>
+                            <div class="portfolio-info">
+                                <h5>🌵 Arte Verde <span class="badge badge-online">En línea</span></h5>
+                                <p>Catálogo online para vivero, con buscador y opciones para compartir en WhatsApp y Facebook.</p>
+                                <a href="https://arteverde.rf.gd/" target="_blank" rel="noopener" class="portfolio-btn">Visitar sitio ↗</a>
+                            </div>
+                        </article>
+
+                        <article class="portfolio-card">
+                            <a href="https://burbujas.rf.gd/" target="_blank" rel="noopener" class="portfolio-preview">
+                                <span class="preview-bar"><i></i><i></i><i></i><span class="preview-url">burbujas.rf.gd</span></span>
+                                <img src="portafolio/burbujas.jpg" alt="Vista previa de Burbujas y Burbujas Infantiles" loading="lazy">
+                            </a>
+                            <div class="portfolio-info">
+                                <h5>🫧 Burbujas Infantiles <span class="badge badge-online">En línea</span></h5>
+                                <p>Catálogo de ropa infantil con identidad visual propia, buscador y difusión en redes.</p>
+                                <a href="https://burbujas.rf.gd/" target="_blank" rel="noopener" class="portfolio-btn">Visitar sitio ↗</a>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="presupuesto" class="data-card">
+                <h3 class="box-title">Presupuesto Online</h3>
+                <div class="card-content">
+                    <p class="presu-intro">
+                        🧾 Elegí los trabajos que necesitás y mirá el costo estimado al instante. Los valores corresponden a mano de obra; materiales y repuestos se cotizan aparte.
+                    </p>
+                    <div class="presu-dolar" id="presu-dolar">💵 Cargando cotización del dólar…</div>
+                    <div class="presu-lista" id="presu-lista"></div>
+                    <div class="presu-resumen" id="presu-resumen"></div>
                 </div>
             </section>
 
@@ -351,6 +431,7 @@
 
     <!-- Script en JS (JavaScript) -->
     <script src="index.js"></script>
+    <script src="presupuesto.js"></script>
 </body>
 
 </html>
@@ -360,5 +441,3 @@
 
 
 ?>
-
-<script src="index.js">

@@ -397,3 +397,499 @@ body {
 
 
 
+
+/* ===== Portafolio: tarjetas con vista previa ===== */
+.portfolio-intro {
+  text-align: center;
+}
+
+.portfolio-group-title {
+  color: #00ffcc;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 20px 0 12px 0;
+  padding-left: 10px;
+  border-left: 3px solid #00ffcc;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.portfolio-card {
+  background: rgba(0, 10, 25, 0.55);
+  border: 1px solid rgba(0, 191, 255, 0.4);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-4px);
+  border-color: #00ffcc;
+  box-shadow: 0 0 18px rgba(0, 255, 204, 0.45);
+}
+
+.portfolio-card-featured {
+  border-color: #00ffcc;
+  box-shadow: 0 0 12px rgba(0, 255, 204, 0.3);
+}
+
+/* Vista previa con marco de navegador */
+.portfolio-preview {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.preview-bar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #0a1a2a;
+  padding: 6px 8px;
+  border-bottom: 1px solid rgba(0, 191, 255, 0.3);
+}
+
+.preview-bar i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ff5f57;
+}
+.preview-bar i:nth-child(2) { background: #febc2e; }
+.preview-bar i:nth-child(3) { background: #28c840; }
+
+.preview-url {
+  flex: 1;
+  margin-left: 6px;
+  background: rgba(0, 191, 255, 0.1);
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 0.65rem;
+  color: #a2c8ff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.portfolio-preview img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.5s ease;
+}
+
+.portfolio-card:hover .portfolio-preview img {
+  transform: scale(1.04);
+}
+
+.portfolio-info {
+  padding: 12px 14px 14px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.portfolio-info h5 {
+  margin: 0 0 8px 0;
+  font-size: 0.9rem;
+  color: #e0f0ff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.card-content .portfolio-info p {
+  font-size: 0.8rem;
+  flex: 1;
+}
+
+.badge {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: normal;
+}
+.badge-online   { color: #28c840; border: 1px solid #28c840; }
+.badge-wip      { color: #febc2e; border: 1px solid #febc2e; }
+.badge-official { color: #121212; background: #00ffcc; border: 1px solid #00ffcc; }
+
+.portfolio-btn {
+  align-self: flex-start;
+  color: #00ffcc;
+  border: 1px solid #00ffcc;
+  border-radius: 4px;
+  padding: 5px 12px;
+  font-size: 0.75rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.portfolio-btn:hover {
+  background: #00ffcc;
+  color: #121212;
+}
+
+/* Botón destacado de la tienda (fuera del menú, a la derecha de la cabecera) */
+.nav-cta {
+  color: #00bfff;
+  background: rgba(0, 191, 255, 0.08);
+  border: 1px solid #00bfff;
+  box-shadow: 0 0 8px rgba(0, 191, 255, 0.35), inset 0 0 8px rgba(0, 191, 255, 0.15);
+  padding: 5px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  transition: color 0.3s, border-color 0.3s, box-shadow 0.3s, text-shadow 0.3s;
+}
+
+.nav-cta:hover {
+  color: #00ffcc;
+  border-color: #00ffcc;
+  text-shadow: 0 0 8px rgba(0, 255, 204, 0.6);
+  box-shadow: 0 0 14px rgba(0, 255, 204, 0.55), inset 0 0 10px rgba(0, 255, 204, 0.2);
+}
+
+/* ===== Cabecera: nunca partir el título ni los ítems del menú ===== */
+.header-title,
+.nav-links a {
+  white-space: nowrap;
+}
+
+.dashboard-header-bar {
+  flex-wrap: wrap;
+  gap: 10px 30px;
+}
+
+/* PC ancha: título | menú | tienda, todo en una fila */
+.nav-links {
+  margin-left: auto;
+}
+
+/* PC/notebook más angosta: fila 1 = título a la izquierda y tienda a la derecha;
+   fila 2 = el resto del menú, centrado */
+@media (max-width: 1550px) and (min-width: 769px) {
+  .dashboard-header-bar {
+    padding: 10px 20px 12px;
+  }
+
+  .header-content-wrapper { order: 1; }
+  .nav-cta                { order: 2; }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    margin-left: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 8px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(0, 191, 255, 0.25);
+  }
+}
+
+/* Celular: todo apilado y centrado */
+@media (max-width: 768px) {
+  .nav-links {
+    margin-left: 0;
+  }
+}
+
+/* Celulares muy angostos: permitir que el título baje de línea */
+@media (max-width: 420px) {
+  .header-title {
+    white-space: normal;
+    letter-spacing: 2px;
+  }
+}
+
+/* ===== Presupuesto online ===== */
+.presu-intro {
+  text-align: center;
+}
+
+.presu-dolar {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #a2c8ff;
+  background: rgba(0, 191, 255, 0.08);
+  border: 1px solid rgba(0, 191, 255, 0.35);
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-bottom: 15px;
+}
+
+.presu-dolar strong {
+  color: #00ffcc;
+}
+
+.presu-cat {
+  border: 1px solid rgba(0, 191, 255, 0.35);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: rgba(0, 10, 25, 0.45);
+  overflow: hidden;
+}
+
+.presu-cat summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  color: #00ffcc;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.presu-cat summary::-webkit-details-marker {
+  display: none;
+}
+
+.presu-cat summary::after {
+  content: '▾';
+  color: #00bfff;
+  transition: transform 0.3s;
+}
+
+.presu-cat[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.presu-cat[open] summary {
+  border-bottom: 1px solid rgba(0, 191, 255, 0.25);
+}
+
+.presu-cat-count {
+  margin-left: auto;
+  font-size: 0.65rem;
+  letter-spacing: 1px;
+  color: #a2c8ff;
+  text-transform: none;
+}
+
+.presu-item {
+  display: grid;
+  grid-template-columns: 1fr 95px 150px;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 14px;
+  border-bottom: 1px solid rgba(0, 191, 255, 0.1);
+  transition: background 0.3s;
+}
+
+.presu-item:last-child {
+  border-bottom: none;
+}
+
+.presu-item:hover {
+  background: rgba(0, 191, 255, 0.06);
+}
+
+.presu-item.activo {
+  background: rgba(0, 255, 204, 0.08);
+}
+
+.presu-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.presu-check input {
+  accent-color: #00ffcc;
+  margin-top: 2px;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.presu-nombre {
+  color: #e0f0ff;
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.presu-nombre small {
+  display: block;
+  color: #30c5a7;
+  font-size: 0.68rem;
+}
+
+.presu-cant {
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(0, 20, 40, 0.8);
+  border: 1px solid rgba(0, 191, 255, 0.5);
+  border-radius: 4px;
+  color: #e0f0ff;
+  padding: 4px 6px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.presu-cant:disabled {
+  opacity: 0.3;
+}
+
+.presu-precio {
+  text-align: right;
+  font-size: 0.72rem;
+  color: #a2c8ff;
+}
+
+.presu-precio em {
+  font-style: normal;
+  color: #30c5a7;
+}
+
+.presu-precio b {
+  display: block;
+  font-size: 0.85rem;
+  color: #00ffcc;
+  font-weight: normal;
+}
+
+.presu-resumen {
+  margin-top: 15px;
+  border: 1px solid #00bfff;
+  border-radius: 8px;
+  padding: 15px;
+  background: rgba(0, 20, 40, 0.6);
+  box-shadow: 0 0 12px rgba(0, 191, 255, 0.3);
+}
+
+.presu-vacio {
+  text-align: center;
+  margin: 0;
+}
+
+.presu-totales {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+  text-align: center;
+}
+
+.presu-totales span {
+  display: block;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #a2c8ff;
+}
+
+.presu-totales strong {
+  font-size: 1.1rem;
+  color: #e0f0ff;
+}
+
+.presu-total-ars strong {
+  font-size: 1.4rem;
+  color: #00ffcc;
+  text-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+}
+
+.card-content .presu-nota {
+  text-align: center;
+  font-size: 0.72rem;
+  color: #febc2e;
+  margin: 12px 0 0;
+}
+
+.presu-acciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.presu-acciones .presu-wsp {
+  align-self: center;
+}
+
+.presu-limpiar {
+  background: transparent;
+  border: 1px solid rgba(162, 200, 255, 0.4);
+  border-radius: 4px;
+  color: #a2c8ff;
+  padding: 5px 12px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.presu-limpiar:hover {
+  border-color: #a2c8ff;
+}
+
+@media (max-width: 768px) {
+  .presu-item {
+    grid-template-columns: 1fr auto;
+    row-gap: 4px;
+  }
+
+  .presu-precio {
+    grid-column: 1 / -1;
+    text-align: left;
+    padding-left: 26px;
+  }
+
+  .presu-precio b {
+    display: inline;
+    margin-left: 8px;
+  }
+}
+
+/* Cantidad: solo aparece cuando la tarea está marcada */
+.presu-cant-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.presu-item.activo .presu-cant-wrap {
+  visibility: visible;
+  opacity: 1;
+}
+
+.presu-cant-wrap span {
+  font-size: 0.68rem;
+  color: #30c5a7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  /* En celular no reservar lugar para la cantidad hasta que se marque */
+  .presu-cant-wrap { display: none; }
+  .presu-item.activo .presu-cant-wrap { display: flex; }
+  .presu-cant { width: 52px; }
+}
